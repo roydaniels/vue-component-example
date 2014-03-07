@@ -12,7 +12,7 @@ To get started, install Gulp and Component globally, then clone this repo and in
 
 ``` bash
 $ npm install -g gulp component
-$ git clone https://github.com/vuejs/vue-component-example.git
+$ git clone https://github.com/roydaniels/vue-component-example.git
 $ cd vue-component-example
 $ npm install && component install
 ```
