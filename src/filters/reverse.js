@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function (value) {
-    return value.toString().split('').reverse().join('')
-}
+  return value.toString().split('').reverse().join('');
+};

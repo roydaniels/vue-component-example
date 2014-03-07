@@ -1,25 +1,24 @@
-var Vue = require('vue')
+var Vue = require('vue');
 
 new Vue({
+  el: 'body',
 
-    el: 'body',
+  directives: {
+    flip: require('./directives/flip')
+  },
 
-    directives: {
-        flip: require('./directives/flip')
-    },
+  filters: {
+    reverse: require('./filters/reverse')
+  },
 
-    filters: {
-        reverse: require('./filters/reverse')
-    },
+  components: {
+    a: require('a'),
+    b: require('b')
+  },
 
-    components: {
-        a: require('a'),
-        b: require('b')
-    },
-
-    data: {
-        msg: 'hello',
-        value: 'this should be reversed and flipped',
-        bgColor: '#f3f3f3'
-    }
-})
+  data: {
+    msg: 'hello',
+    value: 'this should be reversed and flipped',
+    bgColor: '#f3f3f3'
+  }
+});
